@@ -41,6 +41,7 @@ bool zadaniye_na_massive() {
 
 
 int zadaniye_na_stroku(std::string_view str, int n) {
+    std::cout << "string: '" << str << "'; iskomaya dlina: " << n << "\n";
     int count = 0;
     int pos = 0;
     int len = str.length();
@@ -58,6 +59,6 @@ int zadaniye_na_stroku(std::string_view str, int n) {
 
 int main() {
     printf(zadaniye_na_massive() ? "da\n" : "net\n");
-    printf("%d\n", zadaniye_na_stroku("ale da zdravstvuitye privet zemlya", 6));
+    printf("resultat: %d\n", zadaniye_na_stroku("zemlyane zdarova", 8));
     return 0;
 }
